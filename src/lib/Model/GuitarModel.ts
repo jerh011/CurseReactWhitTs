@@ -1,5 +1,5 @@
   
- export interface GuitarModel  {
+ export interface GuitarModel {
    id: number;
    name: string;
    image: string;

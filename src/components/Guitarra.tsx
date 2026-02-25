@@ -1,6 +1,8 @@
 
 import type { GuitarModel } from "../lib/Model/GuitarModel";
 
+
+// normalmente se manda a llamar desde a dtos, moodel o types
 type GuitarProps = {
   guitar: GuitarModel;
   addToCart: (item: GuitarModel) => void;

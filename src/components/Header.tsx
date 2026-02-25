@@ -1,4 +1,16 @@
-// import { useMemo } from "react";
+import type { GuitarModel } from "../lib/Model/GuitarModel";
+import type { GuitarDto } from "../lib/Model/GuitarrDto";
+
+// normalmente se manda a llamar desde a dtos, moodel o types
+interface HeaderProps {
+  cart: GuitarDto[];
+  removeFromCart: (id: GuitarModel["id"]) => void;
+  incrementarQuantity: (id: GuitarModel["id"]) => void;
+  decrementarQuantity: (id: GuitarModel["id"]) => void;
+  clearCart:()=>void
+  isEmpty:boolean;
+  cartTotal:number;
+}
 
 export default function Header({
   cart,
@@ -8,7 +20,7 @@ export default function Header({
   clearCart,
   isEmpty,
   cartTotal
-}) {
+}:HeaderProps) {
    
   return (
     <>

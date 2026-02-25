@@ -1,5 +1,5 @@
-import type { GuiatarModel } from "./Model/GuitarModel";
-export const db: GuiatarModel[] = [
+import type { GuitarModel} from "./Model/GuitarModel"
+export const db: GuitarModel[] = [
   {
     id: 1,
     name: "Lukather",
